@@ -1,0 +1,83 @@
+EndPoint: https://scorepoint-cm.herokuapp.com/
+
+------
+
+/game
+method: get
+
+/game/:gameId
+params: gameId
+method: get
+
+/game/gameRequestSent
+params: teamId
+method: post
+
+/game/gameRequestReceived
+params: teamId
+method: post
+
+/game/createGameRequest
+params: pongTableId, startDate, teamLocalId, teamVisitId, gameTypeId, points
+method: post
+
+/game/resetGame
+params: gameId, setId
+method: post
+
+/game/cancelGame
+params: gameId
+method: post
+
+------
+
+/score/addPoint
+params: gameId, visit, setId
+method: post
+comment: if visit == 1 the point goes to the visit team else to the local team
+
+/score/removePoint
+params: gameId, visit, setId
+method: post
+comment: if visit == 1 the point goes to the visit team else to the local team
+
+/score/setWinner
+params: gameId, winnerTeamId, setId
+method: post
+
+------
+
+/user
+params:
+method: get
+
+/user/suggested'
+params:
+method: get
+
+/user/:userId'
+params: userId
+method: get
+
+/user/login'
+params: username, email, firstname, lastname, image_url
+method: post
+
+/user/update'
+params: userId, firstname, lastname, image_url
+method: post
+
+------
+
+/statistics/totalUsers
+method: get
+
+/statistics/mostWinners
+method: get
+
+/statistics/totalGames
+method: get
+
+/statistics/gamesPerHour
+method: get
+
