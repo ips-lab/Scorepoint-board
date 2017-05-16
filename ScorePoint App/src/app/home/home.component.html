@@ -1,0 +1,28 @@
+<div class="container">
+	<div class="page-header">
+		<h3>Users</h3>
+	</div>
+	<div class="list-group" *ngFor="let user of users">
+		<a id="detail" href="#" (click)="openUser(user)" class="list-group-item">{{user.firstname}} {{user.lastname}}</a>
+	</div>
+
+	<!-- Modal -->
+	<!--<div class="modal fade" id="modalInformation" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h4 class="modal-title">Detail Information</h4>
+				</div>
+				<div class="modal-body">
+					<p>Username: {{selecteditem.usernamem || "" }}</p>
+					<p>Email: {{selecteditem.email || "" }}</p>
+					<p>Name: {{selecteditem.firstname || "" }} {{selecteditem.lastname || "" }}</p>
+					<p>Team: {{selecteditem.teamname || "" }}</p>
+				</div>
+			</div>
+		</div>
+	</div>-->
+
+
+</div>
