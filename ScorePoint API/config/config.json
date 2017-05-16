@@ -1,0 +1,9 @@
+{
+    "development": {
+        "PORT": 3000,
+        "DB_URI": "127.0.0.1",
+        "DB_PASSWORD": "",
+        "DB_USER": "root",
+        "DB_NAME": "sc"
+    }
+}
